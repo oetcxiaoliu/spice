@@ -1,0 +1,739 @@
+usb_device_manager.o: usb_device_manager.cpp ../config.h utils.h common.h \
+ /usr/include/errno.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/inttypes.h /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/string \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/c++config.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/os_defines.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/cpu_defines.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stringfwd.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/char_traits.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_algobase.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cstddef \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/functexcept.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/exception_defines.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/cpp_type_traits.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ext/type_traits.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ext/numeric_traits.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_pair.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/move.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/concept_check.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_iterator_base_types.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_iterator_base_funcs.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_iterator.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/debug/debug.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/postypes.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cwchar \
+ /usr/include/xlocale.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/allocator.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/c++allocator.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ext/new_allocator.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/new \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/exception \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/localefwd.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/c++locale.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/iosfwd \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cctype \
+ /usr/include/ctype.h /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/ostream_insert.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cxxabi-forced.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_function.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/backward/binders.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/basic_string.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ext/atomicity.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/gthr.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/atomic_word.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/initializer_list \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/basic_string.tcc \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/vector \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_construct.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_uninitialized.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_vector.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_bvector.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/vector.tcc \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/map \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_tree.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_map.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_multimap.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/memory \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_tempbuf.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_raw_storage_iter.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/backward/auto_ptr.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/list \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_list.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/list.tcc \
+ /usr/include/string.h /usr/include/X11/X.h \
+ /usr/include/spice-1/spice/types.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/include/limits.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h red_types.h \
+ /usr/include/spice-1/spice/error_codes.h \
+ /usr/include/spice-1/spice/macros.h usbredir_channel.h red_channel.h \
+ threads.h ../client/x11/atomic_count.h red_peer.h \
+ /usr/include/openssl/ssl.h /usr/include/openssl/e_os2.h \
+ /usr/include/openssl/opensslconf.h \
+ /usr/include/openssl/opensslconf-i386.h /usr/include/openssl/comp.h \
+ /usr/include/openssl/crypto.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/openssl/stack.h /usr/include/openssl/safestack.h \
+ /usr/include/openssl/opensslv.h /usr/include/openssl/ossl_typ.h \
+ /usr/include/openssl/symhacks.h /usr/include/openssl/bio.h \
+ /usr/include/openssl/x509.h /usr/include/openssl/buffer.h \
+ /usr/include/openssl/evp.h /usr/include/openssl/fips.h \
+ /usr/include/openssl/objects.h /usr/include/openssl/obj_mac.h \
+ /usr/include/openssl/asn1.h /usr/include/openssl/bn.h \
+ /usr/include/openssl/rsa.h /usr/include/openssl/dsa.h \
+ /usr/include/openssl/dh.h /usr/include/openssl/sha.h \
+ /usr/include/openssl/x509_vfy.h /usr/include/openssl/lhash.h \
+ /usr/include/openssl/pkcs7.h /usr/include/openssl/pem.h \
+ /usr/include/openssl/pem2.h /usr/include/openssl/hmac.h \
+ /usr/include/openssl/kssl.h /usr/include/krb5.h /usr/include/krb5/krb5.h \
+ /usr/include/et/com_err.h /usr/include/openssl/ssl2.h \
+ /usr/include/openssl/ssl3.h /usr/include/openssl/tls1.h \
+ /usr/include/openssl/dtls1.h /usr/include/openssl/pqueue.h \
+ /usr/include/sys/time.h /usr/include/openssl/ssl23.h \
+ /usr/include/openssl/err.h /usr/include/spice-1/spice/protocol.h \
+ /usr/include/spice-1/spice/enums.h \
+ /usr/include/spice-1/spice/start-packed.h \
+ /usr/include/spice-1/spice/end-packed.h process_loop.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/set \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_set.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_multiset.h \
+ event_sources.h ../client/x11/event_sources_p.h common.h threads.h \
+ ../client/x11/platform_utils.h /usr/include/sys/socket.h \
+ /usr/include/sys/uio.h /usr/include/bits/uio.h \
+ /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
+ /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
+ /usr/include/netinet/in.h /usr/include/bits/in.h \
+ /usr/include/arpa/inet.h /usr/include/netinet/tcp.h /usr/include/netdb.h \
+ /usr/include/rpc/netdb.h /usr/include/bits/siginfo.h \
+ /usr/include/bits/netdb.h ../common/marshaller.h ../common/mem.h debug.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/sstream \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/istream \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ios \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/ios_base.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/locale_classes.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/locale_classes.tcc \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/streambuf \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/streambuf.tcc \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/basic_ios.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/locale_facets.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cwctype \
+ /usr/include/wctype.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/ctype_base.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/streambuf_iterator.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/ctype_inline.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/locale_facets.tcc \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/basic_ios.tcc \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ostream \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/ostream.tcc \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/istream.tcc \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/sstream.tcc \
+ platform.h cursor.h ../common/messages.h ../common/draw.h \
+ ../client/x11/red_window_p.h /usr/include/X11/Xdefs.h \
+ /usr/include/X11/Xlib.h /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h ../common/ssl_verify.h \
+ /usr/include/openssl/x509v3.h /usr/include/openssl/conf.h \
+ demarshallers.h marshallers.h devredir_cam.h linux_video.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/include/stdbool.h \
+ /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
+ /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
+ /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h /usr/include/bits/ioctl-types.h \
+ /usr/include/sys/ttydefaults.h /usr/include/dirent.h \
+ /usr/include/bits/dirent.h /usr/include/linux/videodev2.h \
+ /usr/include/linux/types.h /usr/include/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
+ /usr/include/asm/posix_types.h /usr/include/asm/posix_types_32.h \
+ usb_device_manager.h \
+ /usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/iostream \
+ /home/spicec/spice-client/include/libusb-1.0/libusb.h
+
+../config.h:
+
+utils.h:
+
+common.h:
+
+/usr/include/errno.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/string:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/c++config.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/os_defines.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/cpu_defines.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stringfwd.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/char_traits.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_algobase.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cstddef:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/functexcept.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/exception_defines.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ext/type_traits.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ext/numeric_traits.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_pair.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/move.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/concept_check.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_iterator.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/debug/debug.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/postypes.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cwchar:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/allocator.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/c++allocator.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ext/new_allocator.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/new:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/exception:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/localefwd.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/c++locale.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/iosfwd:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/ostream_insert.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cxxabi-forced.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_function.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/backward/binders.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/basic_string.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ext/atomicity.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/gthr.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/atomic_word.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/initializer_list:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/basic_string.tcc:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/vector:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_construct.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_vector.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_bvector.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/vector.tcc:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/map:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_tree.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_map.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_multimap.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/memory:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_tempbuf.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_raw_storage_iter.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/backward/auto_ptr.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/list:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_list.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/list.tcc:
+
+/usr/include/string.h:
+
+/usr/include/X11/X.h:
+
+/usr/include/spice-1/spice/types.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/include/limits.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+red_types.h:
+
+/usr/include/spice-1/spice/error_codes.h:
+
+/usr/include/spice-1/spice/macros.h:
+
+usbredir_channel.h:
+
+red_channel.h:
+
+threads.h:
+
+../client/x11/atomic_count.h:
+
+red_peer.h:
+
+/usr/include/openssl/ssl.h:
+
+/usr/include/openssl/e_os2.h:
+
+/usr/include/openssl/opensslconf.h:
+
+/usr/include/openssl/opensslconf-i386.h:
+
+/usr/include/openssl/comp.h:
+
+/usr/include/openssl/crypto.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/openssl/stack.h:
+
+/usr/include/openssl/safestack.h:
+
+/usr/include/openssl/opensslv.h:
+
+/usr/include/openssl/ossl_typ.h:
+
+/usr/include/openssl/symhacks.h:
+
+/usr/include/openssl/bio.h:
+
+/usr/include/openssl/x509.h:
+
+/usr/include/openssl/buffer.h:
+
+/usr/include/openssl/evp.h:
+
+/usr/include/openssl/fips.h:
+
+/usr/include/openssl/objects.h:
+
+/usr/include/openssl/obj_mac.h:
+
+/usr/include/openssl/asn1.h:
+
+/usr/include/openssl/bn.h:
+
+/usr/include/openssl/rsa.h:
+
+/usr/include/openssl/dsa.h:
+
+/usr/include/openssl/dh.h:
+
+/usr/include/openssl/sha.h:
+
+/usr/include/openssl/x509_vfy.h:
+
+/usr/include/openssl/lhash.h:
+
+/usr/include/openssl/pkcs7.h:
+
+/usr/include/openssl/pem.h:
+
+/usr/include/openssl/pem2.h:
+
+/usr/include/openssl/hmac.h:
+
+/usr/include/openssl/kssl.h:
+
+/usr/include/krb5.h:
+
+/usr/include/krb5/krb5.h:
+
+/usr/include/et/com_err.h:
+
+/usr/include/openssl/ssl2.h:
+
+/usr/include/openssl/ssl3.h:
+
+/usr/include/openssl/tls1.h:
+
+/usr/include/openssl/dtls1.h:
+
+/usr/include/openssl/pqueue.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/openssl/ssl23.h:
+
+/usr/include/openssl/err.h:
+
+/usr/include/spice-1/spice/protocol.h:
+
+/usr/include/spice-1/spice/enums.h:
+
+/usr/include/spice-1/spice/start-packed.h:
+
+/usr/include/spice-1/spice/end-packed.h:
+
+process_loop.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/set:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_set.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/stl_multiset.h:
+
+event_sources.h:
+
+../client/x11/event_sources_p.h:
+
+common.h:
+
+threads.h:
+
+../client/x11/platform_utils.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/socket.h:
+
+/usr/include/bits/sockaddr.h:
+
+/usr/include/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/netinet/tcp.h:
+
+/usr/include/netdb.h:
+
+/usr/include/rpc/netdb.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/netdb.h:
+
+../common/marshaller.h:
+
+../common/mem.h:
+
+debug.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/sstream:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/istream:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ios:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/ios_base.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/locale_classes.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/locale_classes.tcc:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/streambuf:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/streambuf.tcc:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/basic_ios.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/locale_facets.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/ctype_base.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/i686-redhat-linux/bits/ctype_inline.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/locale_facets.tcc:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/basic_ios.tcc:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/ostream:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/ostream.tcc:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/istream.tcc:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/bits/sstream.tcc:
+
+platform.h:
+
+cursor.h:
+
+../common/messages.h:
+
+../common/draw.h:
+
+../client/x11/red_window_p.h:
+
+/usr/include/X11/Xdefs.h:
+
+/usr/include/X11/Xlib.h:
+
+/usr/include/X11/Xfuncproto.h:
+
+/usr/include/X11/Xosdefs.h:
+
+../common/ssl_verify.h:
+
+/usr/include/openssl/x509v3.h:
+
+/usr/include/openssl/conf.h:
+
+demarshallers.h:
+
+marshallers.h:
+
+devredir_cam.h:
+
+linux_video.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/sys/mman.h:
+
+/usr/include/bits/mman.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/include/stdbool.h:
+
+/usr/include/sys/ioctl.h:
+
+/usr/include/bits/ioctls.h:
+
+/usr/include/asm/ioctls.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/bits/ioctl-types.h:
+
+/usr/include/sys/ttydefaults.h:
+
+/usr/include/dirent.h:
+
+/usr/include/bits/dirent.h:
+
+/usr/include/linux/videodev2.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/asm/types.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/asm/bitsperlong.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/asm/posix_types.h:
+
+/usr/include/asm/posix_types_32.h:
+
+usb_device_manager.h:
+
+/usr/lib/gcc/i686-redhat-linux/4.4.6/../../../../include/c++/4.4.6/iostream:
+
+/home/spicec/spice-client/include/libusb-1.0/libusb.h:

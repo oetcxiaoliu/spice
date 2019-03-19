@@ -1,0 +1,14 @@
+
+apt-get install automake
+apt-get install autoconf
+apt-get install libtool
+
+生成Makefile:
+Step 1. aclocal
+Step 2. autoreconf -i
+Step 3. autoheader
+Step 4. automake
+
+
+Spice-linux编译参数:
+./configure --enable-client

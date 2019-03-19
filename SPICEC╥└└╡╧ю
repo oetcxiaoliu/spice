@@ -1,0 +1,54 @@
+SPICEC 依赖工程（仅列出常用项）
+
+    外部可能依赖项:
+    libogg-dev
+    libalsa-ocaml-dev
+    libjpeg-dev
+    libsasl2-dev
+    xorg-dev
+    libgudev-1.0-dev
+    
+    需要源码编译的外部依赖项,需要到相关网站进行下载编译
+    celt051
+    openssl
+    pixman-01
+
+    离线视频重定向功能:
+    1. ffmpeg
+        SVN：http://192.168.1.16/svn/free_vdi/video_redir/ffmpeg-2.0.1
+        详情参见该工程下ReadMe.txt
+
+    2. libSDL
+        SVN: http://192.168.1.16/svn/free_vdi/video_redir/SDL-1.2.15
+        详情参见该工程下ReadMe.txt
+        
+    USB重定向功能:
+    3. libusbx
+        SVN: http://192.168.1.16/svn/free_vdi/spice_client_gtk/trunk/libusbx-1.0.9
+    4. usbredir-0
+        SVN http://192.168.1.16/svn/free_vdi/spice_client_gtk/trunk/usbredir-0.4.3
+        
+    SPICE协议工程:
+    5. spice-protocol
+        SVN: http://192.168.1.16/svn/free_vdi/spice-protocol/trunk/spice-protocol-0.10.1
+
+        
+SPICEC 工程需要重新生成configure文件
+    1. Linux x86 执行以下操作
+    生成Makefile:
+    libtoolize -f
+    aclocal
+    autoconf
+    autoheader
+    automake
+    ./configure --参数列表
+
+    2. Linux arm 执行以下操作
+    aclocal
+    autoreconf -i
+    autoheader
+    automake
+    ./configure --参数列表
+
+Spice-linux编译参数详见 --help 参数:
+./configure --help
